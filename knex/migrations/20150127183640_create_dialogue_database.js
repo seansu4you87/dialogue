@@ -1,3 +1,4 @@
+/*jslint node: true*/
 'use strict';
 
 exports.up = function(knex, Promise) {
