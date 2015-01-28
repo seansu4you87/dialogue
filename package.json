@@ -1,0 +1,23 @@
+{
+  "name": "dialogue",
+  "version": "0.0.0",
+  "description": "toy",
+  "main": "index.js",
+  "dependencies": {
+    "express": "~4.11.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/seansu4you87/dialogue.git"
+  },
+  "author": "Sean Yu",
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://github.com/seansu4you87/dialogue/issues"
+  },
+  "homepage": "https://github.com/seansu4you87/dialogue"
+}
