@@ -10,7 +10,8 @@
     "node-uuid": "~1.4.2",
     "lodash": "~3.0.0",
     "sequelize": "~2.0.0-rc8",
-    "sequelize-cli": "~1.0.7"
+    "sequelize-cli": "~1.0.7",
+    "dotenv": "~0.5.1"
   },
   "devDependencies": {},
   "scripts": {
