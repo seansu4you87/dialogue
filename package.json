@@ -4,7 +4,9 @@
   "description": "toy",
   "main": "index.js",
   "dependencies": {
-    "express": "~4.11.1"
+    "express": "~4.11.1",
+    "knex": "~0.7.3",
+    "bookshelf": "~0.7.9"
   },
   "devDependencies": {},
   "scripts": {
