@@ -7,9 +7,9 @@ module.exports = {
     connection: {
       host: "localhost",
       port: "15432",
-      database: 'myapp',
-      user:     'myapp',
-      password: 'dbpass'
+      database: 'dialogue',
+      user:     'dialogue',
+      password: 'talkdirty2me'
     },
     pool: {
       min: 2,

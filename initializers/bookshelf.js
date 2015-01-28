@@ -3,10 +3,10 @@ var knex = require('knex')({
   connection: {
     host: 'localhost',
     port: "15432",
-    user: 'myapp',
-    password: 'dbpass',
-    database: 'myapp'
-    // charset: 'utf8'
+    user: 'dialogue',
+    password: 'talkdirty2me',
+    database: 'dialogue',
+    charset: 'utf8'
   },
   pool: {
     min: 2,

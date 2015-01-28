@@ -8,7 +8,7 @@ APP_DB_PASS=talkdirty2me
 APP_DB_NAME=$APP_DB_USER
 
 # Edit the following to change the version of PostgreSQL that is installed
-PG_VERSION=9.3
+PG_VERSION=9.4
 
 ###########################################################
 # Changes below this line are probably not necessary
