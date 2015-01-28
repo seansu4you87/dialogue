@@ -6,7 +6,8 @@
   "dependencies": {
     "express": "~4.11.1",
     "knex": "~0.7.3",
-    "bookshelf": "~0.7.9"
+    "bookshelf": "~0.7.9",
+    "node-uuid": "~1.4.2"
   },
   "devDependencies": {},
   "scripts": {

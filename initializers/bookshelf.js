@@ -2,14 +2,17 @@ var knex = require('knex')({
   client: 'pg',
   connection: {
     host: 'localhost',
-    user: 'yourapp',
+    port: "15432",
+    user: 'myapp',
     password: 'dbpass',
-    database: 'dialogue',
-    charset: 'utf8'
+    database: 'myapp'
+    // charset: 'utf8'
+  },
+  pool: {
+    min: 2,
+    max: 10
   }
 });
-
-console.log("hello");
 
 var bookshelf = require('bookshelf')(knex);
 
