@@ -1,4 +1,5 @@
 var Merchant = require('../../models/bookshelf/merchant');
+var expect = require('chai').expect;
 var assert = require('assert');
 
 describe(Merchant, function () {
@@ -10,13 +11,14 @@ describe(Merchant, function () {
         email: "seansu4you87@gmail.com",
       })
       assert.equal(m.isNew(), true);
+      expect(m.isNew()).to.be.true();
 
       m.save().then(function (model) {
-        assert.equal(model.isNew(), false);
-        assert.equal(model.firstName, "Sean");
-        assert.equal(model.firstName, "Yu");
-        assert.equal(model.email, "seansu4you87@gmail.com");
-        assert.equal(model.token, null);
+        expect(m.isNew()).to.be.false();
+        expect(m.get('firstName')).to.eql("Sean");
+        expect(m.get('lastName')).to.eql("Yu");
+        expect(m.get('email')).to.eql("seansu4you87@gmail.com");
+        expect(m.get('token')).to.not.be.false();
         done();
       });
     });
