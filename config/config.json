@@ -1,0 +1,25 @@
+{
+  "development": {
+    "username": "dialogue",
+    "password": "talkdirty2me",
+    "database": "dialogue_development",
+    "host": "localhost",
+    "port": 15432,
+    "dialect": "postgres"
+  },
+  "test": {
+    "username": "dialogue",
+    "password": "talkdirty2me",
+    "database": "dialogue_test",
+    "host": "localhost",
+    "port": 15432,
+    "dialect": "postgres"
+  },
+  "production": {
+    "username": "root",
+    "password": null,
+    "database": "dialogue_production",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  }
+}
