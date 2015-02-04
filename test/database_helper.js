@@ -6,7 +6,6 @@ var knex = require('../initializers/bookshelf').knex;
 
 var tables = [
   'merchants',
-  'customers',
 ];
 
 function truncate() {
