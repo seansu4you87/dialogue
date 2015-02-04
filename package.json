@@ -13,7 +13,10 @@
     "sequelize-cli": "~1.0.7",
     "bluebird": "~2.9.3"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "mocha": "~2.1.0",
+    "chai": "~1.10.0"
+  },
   "scripts": {
     "test": "NODE_ENV=test mocha --reporter nyan --recursive test"
   },
