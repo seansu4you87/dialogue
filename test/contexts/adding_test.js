@@ -1,7 +1,7 @@
 var Adding = require('../../contexts/adding');
 var assert = require('assert');
 
-describe(Adding, function() {
+describe("Adding", function() {
   it('should return the sum of two numbers', function() {
     assert.equal(Adding(2, 3), 5);
   });

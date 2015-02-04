@@ -1,4 +1,5 @@
-/*jslint node: true*/
+/*jshint node: true*/
+/*global beforeEach, after */
 'use strict';
 
 var Promise = require('bluebird');
@@ -14,6 +15,14 @@ function truncate() {
     return knex.raw('truncate table ' + table + ' cascade');
   });
 }
+
+// Truncate before each test runs, and after all tests run
+beforeEach(function() {
+  return truncate();
+});
+after(function() {
+  return truncate();
+});
 
 module.exports = {
   truncate: truncate

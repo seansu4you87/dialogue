@@ -1,12 +1,8 @@
-var Merchant = require('../../models/bookshelf/merchant');
+var Merchant = require('../../models/merchant');
 var expect = require('chai').expect;
 var databaseHelper = require('../database_helper');
 
-describe(Merchant, function () {
-  beforeEach(function() {
-    return dbHelper.truncate();
-  });
-
+describe("Merchant", function () {
   describe('#save', function () {
     it('should save', function (done) {
       var m = new Merchant({
