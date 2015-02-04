@@ -1,16 +1,19 @@
 var Merchant = require('../../models/bookshelf/merchant');
 var expect = require('chai').expect;
-var assert = require('assert');
+var databaseHelper = require('../database_helper');
 
 describe(Merchant, function () {
+  beforeEach(function() {
+    return dbHelper.truncate();
+  });
+
   describe('#save', function () {
     it('should save', function (done) {
       var m = new Merchant({
         firstName: "Sean",
         lastName: "Yu",
         email: "seansu4you87@gmail.com",
-      })
-      assert.equal(m.isNew(), true);
+      });
       expect(m.isNew()).to.be.true();
 
       m.save().then(function (model) {

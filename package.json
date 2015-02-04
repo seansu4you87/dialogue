@@ -10,11 +10,12 @@
     "node-uuid": "~1.4.2",
     "lodash": "~3.0.0",
     "sequelize": "~2.0.0-rc8",
-    "sequelize-cli": "~1.0.7"
+    "sequelize-cli": "~1.0.7",
+    "bluebird": "~2.9.3"
   },
   "devDependencies": {},
   "scripts": {
-    "test": "NODE_ENV=test mocha -R nyan --recursive test"
+    "test": "NODE_ENV=test mocha --reporter spec --recursive test"
   },
   "repository": {
     "type": "git",
