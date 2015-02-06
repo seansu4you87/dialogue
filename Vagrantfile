@@ -14,9 +14,8 @@ Vagrant::Config.run do |config|
   config.vm.box = "precise64"
   config.vm.box_url = "http://files.vagrantup.com/precise64.box"
 
-  config.vm.share_folder "bootstrap", "/mnt/bootstrap", ".", :create => true
-  # config.vm.provision :shell, :path => "Vagrant-setup/bootstrap.sh"
-  config.vm.provision :shell, :path => "bootstrap/postgres.sh"
+  config.vm.share_folder "devops", "/mnt/devops", ".", :create => true
+  config.vm.provision :shell, :path => "devops/postgres.sh"
 
   # PostgreSQL Server port forwarding
   config.vm.forward_port 5432, 15432
