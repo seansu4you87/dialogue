@@ -19,7 +19,7 @@
     "chai": "~1.10.0"
   },
   "scripts": {
-    "test": "NODE_ENV=test mocha --reporter nyan --recursive test"
+    "test": "NODE_ENV=test mocha --reporter nyan --recursive src/test"
   },
   "repository": {
     "type": "git",

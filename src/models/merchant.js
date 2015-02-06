@@ -1,4 +1,4 @@
-var bookshelf = require('../initializers/bookshelf');
+var bookshelf = require('../db/bookshelf');
 var _ = require('lodash');
 var uuid = require('node-uuid');
 

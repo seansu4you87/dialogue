@@ -3,7 +3,7 @@
 'use strict';
 
 var Promise = require('bluebird');
-var knex = require('../initializers/bookshelf').knex;
+var knex = require('../db/bookshelf').knex;
 
 var tables = [
   'merchants',
