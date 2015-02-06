@@ -11,7 +11,8 @@
     "lodash": "~3.0.0",
     "sequelize": "~2.0.0-rc8",
     "sequelize-cli": "~1.0.7",
-    "bluebird": "~2.9.3"
+    "bluebird": "~2.9.3",
+    "hapi": "~8.1.0"
   },
   "devDependencies": {
     "mocha": "~2.1.0",
