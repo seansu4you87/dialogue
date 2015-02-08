@@ -1,5 +1,4 @@
-var expect = require('../test_helper').expect;
-var Promise = require("bluebird");
+var I = require('../test_helper');
 var CreatingMerchant = require('../../contexts/creating_merchant');
 
 
@@ -11,11 +10,11 @@ describe("CreatingMerchant", function() {
       email: "frank@paddyspub.com"
     });
 
-    return Promise.all([
-      expect(promise).to.eventually.have.deep.property("attributes.firstName").that.eql("Frank"),
-      expect(promise).to.eventually.have.deep.property("attributes.lastName").that.eql("Reynolds"),
-      expect(promise).to.eventually.have.deep.property("attributes.email").that.eql("frank@paddyspub.com"),
-      expect(promise).to.eventually.have.deep.property("attributes.token").that.is.a('string')
+    return I.Promise.all([
+      I.expect(promise).to.eventually.have.deep.property("attributes.firstName").that.eql("Frank"),
+      I.expect(promise).to.eventually.have.deep.property("attributes.lastName").that.eql("Reynolds"),
+      I.expect(promise).to.eventually.have.deep.property("attributes.email").that.eql("frank@paddyspub.com"),
+      I.expect(promise).to.eventually.have.deep.property("attributes.token").that.is.a('string')
     ]);
   });
 
@@ -35,7 +34,7 @@ describe("CreatingMerchant", function() {
         email: "owner@paddyspub.com"
       };
       var promise = CreatingMerchant(params);
-      return expect(promise).to.be.eventually.rejectedWith(CreatingMerchant.EmailAlreadyUsedError, "Email already used: owner@paddyspub.com");
+      return I.expect(promise).to.be.eventually.rejectedWith(CreatingMerchant.EmailAlreadyUsedError, "Email already used: owner@paddyspub.com");
     });
-  })
-})
+  });
+});

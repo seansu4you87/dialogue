@@ -14,7 +14,8 @@
     "bluebird": "~2.9.3",
     "hapi": "~8.1.0",
     "good": "~5.1.1",
-    "good-console": "~4.1.0"
+    "good-console": "~4.1.0",
+    "boom": "~2.6.1"
   },
   "devDependencies": {
     "mocha": "~2.1.0",

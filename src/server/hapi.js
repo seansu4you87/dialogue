@@ -1,6 +1,8 @@
 var Hapi = require('hapi');
 var Good = require('good');
 
+var merchantRoutes = require('./routes/merchants');
+
 var server = new Hapi.Server();
 server.connection({ port: 3000 });
 
@@ -12,12 +14,8 @@ server.route({
   }
 });
 
-server.route({
-  method: 'GET',
-  path: '/{name}',
-  handler: function(request, reply) {
-    reply('Hello, ' + encodeURIComponent(request.params.name) + '!');
-  }
+merchantRoutes.forEach(function(route) {
+  server.route(route);
 });
 
 server.register({
@@ -38,3 +36,4 @@ server.register({
   });
 })
 
+module.exports = server;
