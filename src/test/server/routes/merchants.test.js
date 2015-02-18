@@ -22,7 +22,7 @@ describe("Merchants Route", function() {
       ]);
     });
 
-    describe("duplicate request", function() {
+    context("duplicate request", function() {
       it("returns an error on the second request", function() {
         var firstResponse = I.request({
           method: "POST",
@@ -51,5 +51,19 @@ describe("Merchants Route", function() {
         ]);
       })
     });
+
+    //describe("bad params", function() {
+    //  it("returns an error", function() {
+    //    var response = I.request({
+    //      method: "POST",
+    //      url: "/merchants",
+    //      payload: {
+    //        first_name: 0,
+    //        last_name: ["What?"],
+    //        email: "whatdyasay??"
+    //      }
+    //    })
+    //  })
+    //})
   });
 });

@@ -1,6 +1,5 @@
 var Merchant = require('../models/merchant');
 
-
 function CreatingMerchant(params) {
   return Merchant.forge(params)
       .save()
